@@ -4,9 +4,9 @@ import Row from '../assets/row.png'
 
 export default function Home() {
   return (
-   <div className='container mx-auto flex items-center justify-between bg-[#150901] px-20 pb-2'>
- <section className="min-h-screen bg-[#150901] text-white py-1 px-4 flex flex-col md:flex-row items-center justify-between gap-10 mb-10">
-      <div className="max-w-xl">
+   <div className='container mx-auto flex items-center justify-between bg-[#180901] px-20 pb-2 pt-10'>
+ <section className=" bg-[#180901] text-white py-1 px-10 flex flex-col md:flex-row items-center justify-between gap-10 mb-10">
+      <div>
         <h1 className="text-6xl font-bold leading-tight mb-6">
           The Fastest <span className="text-orange-500"> Pizza⚡</span> Delivery
         </h1> 
@@ -20,11 +20,12 @@ export default function Home() {
           <button className="bg-orange-500 hover:bg-orange-600 text-white py-3 px-6 rounded-full font-semibold transition">To order</button>
           <button className="bg-transparent border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white py-3 px-6 rounded-full font-semibold transition">Pizza-Menu</button>
         </div>
+      <img src={Row} className='w-30 ml-90' />
       </div>
    
     </section>
     <div>
-      <img src={RightHome} className='w-150 mr-1  rounded' />
+      <img src={RightHome} className='w-150 mr-1  rounded'/> 
     </div>
    </div>
   );
